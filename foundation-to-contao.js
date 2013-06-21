@@ -31,7 +31,7 @@
 // Programm erhalten haben. Wenn nicht, siehe <http://www.gnu.org/licenses/>.
 
 
-
+$(document).ready(function() {
 // #1 Optimierung des HTML-Grundgerüstes von Contao für Foundation
 // Die Spaltenfunkion vom Layoutbuilder kann hier nicht eingesetzt werden
 // Die Artikel im #Container werden aus diesen Herausgenommen
@@ -262,4 +262,4 @@ if (_vergleich_wrap > -1) {
 // #10 Die Klasse columns ist wichtig für die Spaltendarstellung. 
 $('#wrapper, #footer').find('[class*=large-]').addClass('columns');
 
-
+});
