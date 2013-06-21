@@ -51,13 +51,13 @@ $('#header .inside, #footer .inside').addClass('row');
 // wenn Dieser sowieso die volle Breite haben soll setzt diese 
 // Funktion die Klasse large-12 für Artikel, welche nicht durch ein large-* formatiert sind.
 $('#wrapper > .mod_article').each(function() {
-  var _mod_articles = $(this);
+	var _mod_articles = $(this);
 	var _exist;
 
 	for ( i = 1; i <= 12; i++) {
 
-		var _listCurInd = _mod_articles.find('.large-' + i).index();
-		if (_listCurInd === -1) {
+		var _listCurInd = _mod_articles.is('.large-' + i);
+		if (_listCurInd === false) {
 			_exist = false;
 		} else {
 			_exist = true;
