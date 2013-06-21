@@ -92,12 +92,10 @@ $('.mod_article .back').addClass('large-12');
 $('#metanavi ul').addClass('inline-list right');
 $('#metanavi').append('<div id="underline"></div>');
 $('#mainnavi').addClass('top-bar');
-//$('#mainnavi').attr('data-options',' is_hover: false');
 $('#mainnavi ul.level_1').wrap('<section>');
 $('#mainnavi ul.level_1').addClass('left');
 $('#mainnavi ul.level_1 li span').wrap('<a href="" class="active">');
 $('#mainnavi > section').addClass('top-bar-section');
-// $('#mainnavi section').css('display','none');
 $('#mainnavi').prepend('<ul class="title-area"> <li class="name"><h1><a href="#"></a></h1></li><li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li></ul>');
 
 // #8 mod_navigation
@@ -163,10 +161,10 @@ $('.ce_form form  select').each(function() {
 	var _selectAttr = $(this).attr('class');
 
 	for ( i = 1; i < 12; i++) {
-		//alert(_productlistAttr+'geht'+'large-'+i);
+
 		var _listCur = 'large-' + i;
 		var _vergleich = _selectAttr.indexOf(_listCur);
-		// alert(_listCur );
+
 		if (_vergleich > -1) {
 
 			var _selectlist = $(this);
@@ -183,7 +181,7 @@ $('.radio_container span input').each(function() {
 	var _abgleich = _input.attr('name');
 	_input.attr('id', _abgleich);
 	_input.parent().find('label').attr('for', _abgleich);
-	//alert(' '+_labelFor);
+
 });
 //deaktiviert den HTML-Tag <br>
 $('.mod_article form br').addClass('hide');
@@ -226,10 +224,10 @@ $('.mod_iso_productlist').each(function() {
 	var _productlistAttr = $(this).attr('class');
 
 	for ( i = 1; i <= 12; i++) {
-		//alert(_productlistAttr+'geht'+'large-'+i);
+
 		var _listCur = 'large-' + i;
 		var _vergleich = _productlistAttr.indexOf(_listCur);
-		// alert(_listCur );
+
 		if (_vergleich > -1) {
 
 			var _productlist = $(this);
@@ -255,7 +253,6 @@ $('.mod_iso_productreader').find('form').addClass('small-12 small-uncentered lar
 var _right_wrapped = $(' #footer').parent().attr('class');
 var _vergleich_wrap = _right_wrapped.indexOf('row');
 if (_vergleich_wrap > -1) {
-	//alert(_right_wrapped+'  b '+_vergleich_wrap);
 } else {
 	$('#footer').wrap('<div class="row">');
 }
