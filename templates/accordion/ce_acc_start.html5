@@ -1,0 +1,3 @@
+
+<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+<dl class="accordion <?php echo $this->class.' '.$this->ftc_classes; ?>" <?php echo $this->cssID; ?> data-accordion>

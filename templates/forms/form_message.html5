@@ -1,0 +1,5 @@
+
+  <small class="<?php echo $this->class; ?>">
+    <?php echo $this->message; ?>
+  </small>
+

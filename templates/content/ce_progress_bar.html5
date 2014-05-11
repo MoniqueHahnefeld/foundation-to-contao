@@ -1,0 +1,4 @@
+
+<div class="progress <?php echo $this->class.' '.$this->btn_classes.' '.$this->ftc_classes; ?>" id="<?php echo $this->id; ?>" >
+<span class="meter" style="width: <?php echo $this->progress_size; ?>%"></span>
+</div>

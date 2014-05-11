@@ -1,0 +1,1 @@
+<div id="<?php echo $this->cssId; ?>" class="row <?php echo $this->class; ?>" <?php echo $this->row_data_attr_ftc; ?>>

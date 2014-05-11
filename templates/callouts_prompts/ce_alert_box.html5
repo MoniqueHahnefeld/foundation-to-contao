@@ -1,0 +1,4 @@
+<div data-alert class="alert-box <?php echo $this->alert_classes; ?>" id="<?php echo $this->id; ?>" >
+  <?php echo $this->alert_txt; ?>
+  <a href="#" class="close">&times;</a>
+</div>

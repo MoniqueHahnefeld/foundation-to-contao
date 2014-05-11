@@ -1,0 +1,1 @@
+<div class="reveal-modal <?php echo $this->class; ?>" <?php echo $this->cssID; ?>  data-reveal>
