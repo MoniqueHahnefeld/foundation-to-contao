@@ -17,7 +17,7 @@
 	
 ##Download on Github
 
-	https://github.com/foundation-to-contao/master
+	https://github.com/MoniqueHahnefeld/foundation-to-contao
 
 	
 ##Infos
