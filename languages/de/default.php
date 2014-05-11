@@ -38,7 +38,7 @@ $GLOBALS['TL_LANG']['MSC']['ftcIntroduction']['donate_button'] = '<form action="
 <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
 </form>
 '; 
-$GLOBALS['TL_LANG']['MSC']['ftcIntroduction']['more_info'] = 'Mehr Information gibt es auf <a href="http://foundation.zurb.com/"  target="_blank" title="Zu github" >github &raquo;</a> oder der <a href="http://foundation-to-contao.de" target="_blank" title="Zur FTC-Projektseite" >FTC-Projektseite &raquo;</a>. Außerdem interessant ist die <a href="http://designs2.de" target="_blank" title="Zur designs2 website" >designs2 Website &raquo;</a>.';
+$GLOBALS['TL_LANG']['MSC']['ftcIntroduction']['more_info'] = 'Mehr Information gibt es auf <a href="https://github.com/MoniqueHahnefeld/foundation-to-contao"  target="_blank" title="Zu github" >github &raquo;</a> oder der <a href="http://foundation-to-contao.de" target="_blank" title="Zur FTC-Projektseite" >FTC-Projektseite &raquo;</a>. Außerdem interessant ist die <a href="http://designs2.de" target="_blank" title="Zur designs2 website" >designs2 Website &raquo;</a>.';
 
 
 //modul settings
