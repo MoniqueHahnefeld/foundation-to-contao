@@ -27,13 +27,13 @@ array_insert($GLOBALS['BE_MOD'],0,array
 	    (
 	    'callback'          => 'MHAHNEFELD\FTC\Intro',
       //   'tables'            => array('tl_ftc_intro'),
-	  	'icon'           => 'system/modules/foundation_to_contao/assets/icons/icon.png'
+	  	'icon'           => 'system/modules/foundation-to-contao/assets/icons/icon.png'
 	    
 		),
 	'tl_ftc_settings' => array
 		    (
 	     'tables'            => array('tl_ftc_settings'),
-	     'icon'           => 'system/modules/foundation_to_contao/assets/icons/icon.png'
+	     'icon'           => 'system/modules/foundation-to-contao/assets/icons/icon.png'
 	    
 		)
 		

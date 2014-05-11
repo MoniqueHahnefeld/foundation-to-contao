@@ -31,7 +31,7 @@
   
    $arrFTC_JS = unserialize($this->layout->FTC_JS);
    $arrFoundationJS = unserialize($this->layout->FoundationJS);
-  	$pathFTC = 'system/modules/foundation_to_contao/assets/';
+  	$pathFTC = 'system/modules/foundation-to-contao/assets/';
 
  
   ?>
