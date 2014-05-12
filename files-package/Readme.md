@@ -15,3 +15,6 @@ Im 'foundation' Ordner sind die originalen Dateien vom Framework Foundation.
 Die generierten SCSS-Dateien können dann bequem im Seitenlayout ausgewählt werden.
 	    
 	    Screenshot select-scss-files-in-the-layout.png
+	    
+
+4. Die fixes.css sollte noch mit eingebunden werden
