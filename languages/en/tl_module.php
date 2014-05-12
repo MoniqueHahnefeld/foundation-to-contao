@@ -15,6 +15,7 @@ $GLOBALS['TL_LANG']['FMD']['tl_ftc']   = "FTC";
 $GLOBALS['TL_LANG']['FMD']['ftc_offcanvas_custom'][0]         = "Offcanvas Custom Nav";
 $GLOBALS['TL_LANG']['FMD']['ftc_offcanvas'][0]         = "Offcanvas Nav";
 $GLOBALS['TL_LANG']['FMD']['ftc_topbar_section'][0]         = "Topbar Section";
+$GLOBALS['TL_LANG']['FMD']['ftc_topbar_section_custom'][0]         = "Topbar Section Custom";
 $GLOBALS['TL_LANG']['FMD']['ftc_topbar_start'][0]         = "Extended Topbar Section Start";
 $GLOBALS['TL_LANG']['FMD']['ftc_topbar_stop'][0]         = "Extended Topbar Section Stop";
 $GLOBALS['TL_LANG']['FMD']['ftc_offcanvas_custom'][1]         = "Offcanvas Custom Nav";
