@@ -11,7 +11,7 @@
  */
  
 
-
+$GLOBALS['TL_LANG']['FMD']['tl_ftc']   = "FTC";
 $GLOBALS['TL_LANG']['FMD']['ftc_offcanvas_custom'][0]         = "Offcanvas Custom Nav";
 $GLOBALS['TL_LANG']['FMD']['ftc_offcanvas'][0]         = "Offcanvas Nav";
 $GLOBALS['TL_LANG']['FMD']['ftc_topbar_section'][0]         = "Topbar Section";

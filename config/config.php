@@ -222,9 +222,8 @@ array_insert($GLOBALS['TL_CTE'] ,$CTEsize, array
 
 array_insert($GLOBALS['FE_MOD'], 2, array
 (
-    'tl_mh_foundation_to_contao' => array
+    'tl_ftc' => array
     (
-        'mh_foundation_to_contao'         => 'ModuleFoundationToContao',
         'ftc_topbar_start'         => 'ModuleTopbarStart',
         'ftc_topbar_section'         => 'ModuleTopbarSection',
         'ftc_topbar_section_custom'         => 'ModuleTopbarSectionCustom',
