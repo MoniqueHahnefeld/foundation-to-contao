@@ -17,7 +17,7 @@
  $palettesHide ='{jquery_legend},addJQuery;{mootools_legend},addMooTools;';
  
  $palettes_ftc = str_replace("{title_legend}",$paletteMain."{title_legend}",$palettes);
- $palettes_ftc2  = str_replace($palettesHide,"{ftc_js_legend},addFoundation;",$palettes_ftc);
+ $palettes_ftc2  = str_replace($palettesHide,"{ftc_js_legend},addFoundation;".$palettesHide,$palettes_ftc);
  $palettes_ftc3  = str_replace(',static',"",$palettes_ftc2);
  $palettes_ftc4  = str_replace(',stylesheet',"",$palettes_ftc3);
  $GLOBALS['TL_DCA']['tl_layout']['palettes']['default'] = $palettes_ftc4;
