@@ -1,21 +1,28 @@
 <?php
-
+	$fixStr =true;
 if ($this->label_role=='postfix'||$this->label_role=='prefix') {
 	$fixStr ='<div class=" '.$this->ftc_fix_classes.'">';
 	$fixStr .='<span class="'.$this->class.' '.$this->label_role.'">';
-	$fixStr .= $this->post_pre_fix.'</span></div>';
+	$fixStr .= $this->post_pre_fix;
+	
+	if ($this->mandatory){
+	  $fixStr .='<span class="invisible">'.$this->mandatoryField.'</span> ';
+	  $fixStr .= '<span class="mandatory">*</span>';
+		
+	}
+	$fixStr .= '</span></div>';
 
 }else {
-	$fixStr ='';
+	$fixStr =false;
 }
 
-if (preg_match("/no-style/",$this->label_style)) {
+if (preg_match("/no-style/",$this->label_style)||$this->label_style=='') {
 	echo '<label for="ctrl_'.$this->id.'" >';
 }else {
 	echo '<label for="ctrl_'.$this->id.'" class="label '.$this->label_style.' ">';
 	//echo '<label for="ctrl_'.$this->id.'" >';
 }
-if ($this->mandatory){
+if ($this->mandatory&&!$fixStr){
   	echo '<span class="invisible">'.$this->mandatoryField.'</span> ';
   	echo '<span class="mandatory">*</span>';
 	
@@ -27,7 +34,7 @@ if ($this->mandatory){
 		echo $fixStr;
 		
 	}
-	echo '<div class="'.$this->ftc_field_classes.' " >';
+	echo '<div class="'.$this->ftc_field_classes.' '.$this->id.'" >';
 
 
 ?>

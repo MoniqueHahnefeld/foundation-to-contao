@@ -1,9 +1,9 @@
 <?php 
 
-if (preg_match("/no-style/",$this->label_style)) {
-	echo '<label for="ctrl_'.$this->id.'" >';
+if (preg_match("/no-style/",$this->label_style)||$this->label_style=='') {
+	echo '<label for="ctrl_'.$this->id.'" class="'.$this->id.'" >';
 }else {
-	echo '<label for="ctrl_'.$this->id.'" class="label '.$this->label_style.' ">';
+	echo '<label for="ctrl_'.$this->id.'" class="label '.$this->label_style.' '.$this->id.'">';
 
 }
 if ($this->mandatory){
@@ -15,7 +15,7 @@ if ($this->mandatory){
 	echo '</label>';
 	
 	
-	echo '<div class="'.$this->ftc_field_classes.' '.$this->class.'" >';
+	echo '<div class="'.$this->ftc_field_classes.' '.$this->class.' '.$this->id.'" >';
 
 	foreach ($this->arrOptions as $i => $arrOpt) {
 		

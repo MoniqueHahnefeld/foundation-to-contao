@@ -1,6 +1,6 @@
 <?php 
 
-if (preg_match("/no-style/",$this->label_style)) {
+if (preg_match("/no-style/",$this->label_style)||$this->label_style=='') {
 	echo '<label for="ctrl_'.$this->id.'" >';
 }else {
 	echo '<label for="ctrl_'.$this->id.'" class="label '.$this->label_style.' ">';
