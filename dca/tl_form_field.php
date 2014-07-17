@@ -136,7 +136,7 @@
 		  			'options_callback'        => array('ftcSettingsModel', 'getSmallOpitons'),
 		  			'reference'               => &$GLOBALS['TL_LANG']['tl_form_field']['label_small_ftc_options'],
 		  			'eval'                    => array('helpwizard'=>false, 'chosen'=>true, 'submitOnChange'=>false, 'tl_class'=>'w50'),
-		  			'sql'                     => "varchar(255) NOT NULL default ''"
+		  			'sql'                     => "varchar(255) NOT NULL default 'small-12'"
 		  		),
 		  	'label_large_ftc' => array
 		  			(
@@ -148,7 +148,7 @@
 		  				'options_callback'        => array('ftcSettingsModel', 'getLargeOpitons'),
 		  				'reference'               => &$GLOBALS['TL_LANG']['tl_form_field']['label_large_ftc_options'],
 		  				'eval'                    => array('helpwizard'=>false, 'chosen'=>true, 'submitOnChange'=>false, 'tl_class'=>'w50'),
-		  				'sql'                     => "varchar(255) NOT NULL default ''"
+		  				'sql'                     => "varchar(255) NOT NULL default 'large-12'"
 		  			),
 		  	'label_float_ftc' => array
 		  			(
@@ -206,7 +206,7 @@
 		   			
 		   				'reference'               => &$GLOBALS['TL_LANG']['tl_form_field']['label_classes_options'],
 		   				'eval'                    => array('multiple'=>true,'helpwizard'=>false, 'chosen'=>false, 'submitOnChange'=>false, 'tl_class'=>'w50'),
-		   				'sql'                     => "varchar(255) NOT NULL default ''"
+		   				'sql'                     => "varchar(255) NOT NULL default 'no-style'"
 		   	),
 		   	//range slider
 		   	'rs_classes' => array
