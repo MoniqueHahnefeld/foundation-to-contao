@@ -19,7 +19,7 @@ if ($this->mandatory){
 
 	foreach ($this->arrOptions as $i => $arrOpt) {
 		
-		echo '  <input type="'.$this->type.'" name="'.$arrOpt['name'].'" id="ctrl_'.$arrOpt['id'].'" class="checkbox';
+		echo '  <input type="checkbox" name="'.$arrOpt['name'].'" id="ctrl_'.$arrOpt['id'].'" class="checkbox';
 		if ($arrOpt['class']) {
 		echo ' '.$arrOpt['class'];
 		}
