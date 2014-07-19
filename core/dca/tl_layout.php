@@ -35,7 +35,7 @@ $GLOBALS['TL_DCA']['tl_layout']['subpalettes']['rows_3rw']='rwh_small_ftc,rwh_la
 //left
 $GLOBALS['TL_DCA']['tl_layout']['subpalettes']['cols_2cll']='cll_small_ftc,cll_large_ftc,cll_float_ftc,cll_align_ftc';
 //right
-$GLOBALS['TL_DCA']['tl_layout']['subpalettes']['cols_clr']='clr_small_ftc,clr_large_ftc,clr_float_ftc,clr_align_ftc';
+$GLOBALS['TL_DCA']['tl_layout']['subpalettes']['cols_2clr']='clr_small_ftc,clr_large_ftc,clr_float_ftc,clr_align_ftc';
 //left+right
 $GLOBALS['TL_DCA']['tl_layout']['subpalettes']['cols_3cl']='cll_small_ftc,cll_large_ftc,cll_float_ftc,cll_align_ftc,clr_small_ftc,clr_large_ftc,clr_float_ftc,clr_align_ftc';
 $GLOBALS['TL_DCA']['tl_layout']['subpalettes']['addFoundation']='FoundationJS,FTC_JS';
