@@ -72,7 +72,7 @@ class Intro extends \BackendModule
     {		
 
     	$modul_links=array();	
-    	$this->addIntroduction(&$return);
+    	$this->addIntroduction($return);
     
         $this->Template->before = '<h1 id="tl_welcome">' . sprintf($GLOBALS['TL_LANG']['MSC']['config_theme'], $GLOBALS['TL_LANG']['MSC']['ftc_version']) . '</h1>'; 			 
 		$token="";
