@@ -10,7 +10,7 @@
 ##Documentation
 
 	http://www.foundation-to-contao.de
-	not up to date
+	
 	
 ##Introduction	
 	http://www.new.foundation-to-contao.de
@@ -26,33 +26,38 @@
 	
 ##Infos
 
+Zusätzliche Informationen zu den Funktionen:
 
 
-
-###arbeit mir rem
+### Working with Rem (german)
 http://www.drweb.de/magazin/css-gerootet-flexible-schriftgroessen-mit-rem-38784/
 
-###placeholder images
-http://lorempixel.com/800/800/cats/designs2/ f
+### PLaceholder Images
 
-###Kompatibilität
+[Loremppixel](http://lorempixel.com/800/800/cats/designs2/)
+[Placehold.it](http://placehold.it/)
+
+### Compatiblity
 http://foundation.zurb.com/docs/compatibility.html
 
-###view for icons+names
+### view for icons+names
+
+An Icon Font for intgegration in foundation
+
 http://zurb.com/playground/foundation-icon-fonts-3
 
 
-###designs patterns foundation
+### designs patterns foundation
 http://patterntap.com/code
 http://patterntap.com/
 
-###stencil sets 
+### stencil sets 
 http://zurb.com/playground/foundation4-stencil-sets
 
 ### Mansonry Plugin 
 http://patterntap.com/code/stacking-columns-layout-masonry
 
-### settings for contao
+### settings fpr contao
 Artikel f
 Nachrichten
 Events
@@ -67,7 +72,7 @@ Keystrokes
 Labels
 
 
-### Included elements of foundation Framkwork
+### integrated functions of Foundation Framework
 
 
 All Foundation Components
@@ -119,15 +124,15 @@ JAVASCRIPT COMPONENTS:
 	Joyride f
 	Reveal f
  
-
- #####meta
+#### Meta
+ 
 	Abide
 	Tooltips f 
 	Interchange
 	Visibility
 
- 
- #####module
+#### Module 
+
 	JS Top Bar f
 	Magellan f
 	Off Canvas f
@@ -138,13 +143,16 @@ JAVASCRIPT COMPONENTS:
 	Breadcrumbs f
 	Sub Nav
  
- ##Settings
+ 
+### Settings
+ 
 	settings mit scss generate f
  
- ##use Tooltips
+### use Tooltips
  
- ####setting tooltip
-$('[title]').attr('data-tooltip','data-tooltip');
+#### Setting tooltip
+```javascript
+    $('[title]').attr('data-tooltip','data-tooltip');
 	$(document).foundation({
   				tooltips: {
     selector : '[title]',
@@ -158,8 +166,9 @@ $('[title]').attr('data-tooltip','data-tooltip');
         + '">' + content + '<span class="nub"></span></span>';
    		 }}
   		});
- 
- ###ORBIT
+```
+### ORBIT
+```javascript
  $(document).foundation({
    orbit: {
        animation: 'slide', // Sets the type of animation used for transitioning between slides, can also be 'fade'
@@ -197,7 +206,8 @@ $('[title]').attr('data-tooltip','data-tooltip');
        after_slide_change: noop // Execute a function after the slide changes
    }
  });
- 
+```
+```html
  settings an template senden
  <ul data-orbit
      data-options="animation:slide;
@@ -206,8 +216,10 @@ $('[title]').attr('data-tooltip','data-tooltip');
                    navigation_arrows:true;
                    bullets:false;">
  </ul>
- 
- ####erweitern um thumbsnav
+ ```
+#### erweitern um thumbsnav
+
+```javascript
  <a data-orbit-link="headline-1" class="small button">
    Goto Slide 1
  </a>
@@ -217,4 +229,4 @@ $('[title]').attr('data-tooltip','data-tooltip');
  <a data-orbit-link="headline-3" class="small button">
    Goto Slide 3
  </a>
- 
+```
