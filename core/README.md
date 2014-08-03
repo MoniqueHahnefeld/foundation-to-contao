@@ -7,6 +7,7 @@
 - Foundation 5 von Zurb
 - jQuery
 
+
 ##Documentation
 
 	http://www.foundation-to-contao.de
@@ -230,3 +231,9 @@ JAVASCRIPT COMPONENTS:
    Goto Slide 3
  </a>
 ```
+#### License
+
+This work is published under LGPLv3-License
+
+Further information can be found here: 
+[http://www.gnu.de/documents/lgpl.de.html](http://www.gnu.de/documents/lgpl.de.html)
