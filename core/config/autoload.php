@@ -26,11 +26,14 @@ ClassLoader::addNamespaces(array
  */
 ClassLoader::addClasses(array
 (
+	
+	//HOOKs
+	'MHAHNEFELD\FTC\PrepareVars' => 'system/modules/foundation-to-contao/classes/PrepareVars.php',
+	
 	// Models
 	'MHAHNEFELD\FTC\ftcSettingsModel' => 'system/modules/foundation-to-contao/models/ftcSettingsModel.php',
 
 	// Modules
-	
 	'MHAHNEFELD\FTC\Module'  => 'system/modules/foundation-to-contao/modules/Module.php',
 	'MHAHNEFELD\FTC\ModuleOffcanvasCustom'  => 'system/modules/foundation-to-contao/modules/ModuleOffcanvasCustom.php',
 	'MHAHNEFELD\FTC\ModuleOffcanvas'  => 'system/modules/foundation-to-contao/modules/ModuleOffcanvas.php',
@@ -45,7 +48,7 @@ ClassLoader::addClasses(array
 	'MHAHNEFELD\FTC\Intro'  => 'system/modules/foundation-to-contao/classes/Intro.php',
 	'MHAHNEFELD\FTC\Themes'  => 'system/modules/foundation-to-contao/classes/Themes.php',
 	'MHAHNEFELD\FTC\ModuleFTC'  => 'system/modules/foundation-to-contao/classes/ModuleFTC.php',
-	'Contao\ContentElement'  => 'system/modules/foundation-to-contao/elements/ContentElement.php',
+
 	'MHAHNEFELD\FTC\Hybrid'  => 'system/modules/foundation-to-contao/classes/Hybrid.php',
 	
 	//Elements magellan

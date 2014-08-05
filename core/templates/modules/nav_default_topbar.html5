@@ -1,3 +1,4 @@
+<!-- indexer::stop -->
 <ul class="<?php echo $this->level; ?> <?php if($this->level_int==1){ echo $this->offcanvas_align;} ?>">
   <?php foreach ($this->items as $item): ?>
     <?php if ($item['isActive']): ?>
@@ -12,3 +13,4 @@
     <?php endif; ?>
   <?php endforeach; ?>
 </ul>
+<!-- indexer::continue -->

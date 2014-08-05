@@ -1,6 +1,5 @@
 <!-- indexer::stop -->
-
- <?php   if ($this->top_bar=='1'):?>
+<?php   if ($this->top_bar=='1'):?>
 	 <nav class="tab-bar">
 
      <?php   if ($this->top_bar_left=='1'):?>
@@ -26,14 +25,12 @@
     <?php  endif; ?>
     
     <?php   if ($this->items):?> 
-		  <?php   if ($this->offcanvas_align=='left') {
-		  	echo '<aside class="left-off-canvas-menu">';
-		  }else {
-		  	 	echo '<aside class="right-off-canvas-menu">';
-		  }
-		  ?>
-		
-		
+	  <?php   if ($this->offcanvas_align=='left') {
+	  	echo '<aside class="left-off-canvas-menu">';
+	  }else {
+	  	 	echo '<aside class="right-off-canvas-menu">';
+	  }
+	  ?>
 		  <a href="<?php echo $this->request; ?>#<?php echo $this->skipId; ?>" class="invisible"><?php echo $this->skipNavigation; ?></a>
 		
 		  <?php echo $this->items; ?>
@@ -41,7 +38,7 @@
 		  <a id="<?php echo $this->skipId; ?>" class="invisible">&nbsp;</a>
 		
 		</aside>
-		  <?php  else: ?>
+	<?php  else: ?>
 		  <script>
 		  	  <?php   if ($this->offcanvas_align=='left') {
 		  	echo "var _toggler = document.getElementsByClassName('left-off-canvas-toggle');";

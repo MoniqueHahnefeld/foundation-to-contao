@@ -34,14 +34,5 @@ class ContentRevealModalStart extends \ContentElement
 			$this->Template->title = $this->headline;
 		}
 
-		if ($this->cssID!=='') {
-		$cssIDArr= $this->cssID;	
-		}else{
-		$cssIDArr= array('','');
-		}	
-	
-		$this->Template->cssID = $cssIDArr[0];
-		$this->Template->class = $cssIDArr[1];
-		unset($this);
 	}
 }

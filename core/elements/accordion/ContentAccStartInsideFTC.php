@@ -35,16 +35,7 @@ class ContentAccStartInsideFTC extends \ContentElement
 			$this->Template = new \BackendTemplate($this->strTemplate);
 			$this->Template->title = $this->headline;
 		}
-		
-		if ($this->cssID!=='') {
-		$cssIDArr= $this->cssID;	
-		}else{
-		$cssIDArr= array('','');
-		}	
 		$this->Template->hl = $this->hl;
 		$this->Template->headline = $this->headline;
-		$this->Template->cssId = $cssIDArr[0];
-		$this->Template->cssClass = $cssIDArr[1];
-		unset($this);
 	}
 }

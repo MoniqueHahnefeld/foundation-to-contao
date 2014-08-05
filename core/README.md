@@ -10,10 +10,6 @@
 ##Documentation
 
 	http://www.foundation-to-contao.de
-	not up to date
-	
-##Introduction	
-	http://www.new.foundation-to-contao.de
 	
 ##Tutorials	
 

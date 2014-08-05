@@ -34,21 +34,6 @@ class ContentAlertBox extends \ContentElement
 			$this->Template->title = $this->headline;
 		}
 	
-			$this->Template->id = 'alert_' . $this->id;
-			
-			
-			$this->Template->alert_classes = $this->alert_kind. ' ' . $this->alert_styles;
-	
 	}
 	
-	public function splitArr($arr){
-	$str='';
-		if ($arr==''||!is_array(unserialize($arr))) {
-			return;
-		}
-		foreach (unserialize($arr) as $class) {
-			$str.=' '.$class;
-		}
-		return $str;
-	}
 }

@@ -274,6 +274,8 @@ array_insert($GLOBALS['FE_MOD'], 2, array
  unset($GLOBALS['TL_CTE']['files']);
 
 
+$GLOBALS['TL_HOOKS']['getContentElement'][] = array('PrepareVars', 'elements');
+
 
 
 // config.php   ###### Templateausgabe für ContentElements.php

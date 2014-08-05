@@ -37,11 +37,6 @@ class ContentMagellanNav extends \ContentElement
 
 		$items = unserialize($this->magellan_nav);
 		 if (!is_array($items)) {return;}
-	
-
-		$this->Template->id = 'magellan_' . $this->id;
-		
-		
 		$this->Template->items = $items;
 	
 	}

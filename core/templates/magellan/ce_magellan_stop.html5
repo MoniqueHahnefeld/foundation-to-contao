@@ -1,5 +1,5 @@
-<a name="<?php echo $this->cssId; ?>"></a>
-<<?php echo $this->hl; ?> class="<?php echo $this->class; ?>" <?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?> data-magellan-destination="<?php echo $this->cssId; ?>">
+<a name="<?php echo $this->cssID; ?>">&nbsp>;</a>
+<<?php echo $this->hl; ?> class="<?php echo $this->class; ?>" <?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?> data-magellan-destination="<?php echo $this->cssID; ?>">
   <?php echo $this->headline; ?>
 </<?php echo $this->hl; ?>>
 

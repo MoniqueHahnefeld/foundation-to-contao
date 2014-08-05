@@ -27,27 +27,15 @@ class ContentProgressBar extends \ContentElement
 	 */
 	protected function compile()
 	{
-			if (TL_MODE == 'BE')
-			{
-				$this->strTemplate = 'be_wildcard';
-				$this->Template = new \BackendTemplate($this->strTemplate);
-				$this->Template->title = $this->headline;
-			}
+		
+		if (TL_MODE == 'BE')
+		{
+			$this->strTemplate = 'be_wildcard';
+			$this->Template = new \BackendTemplate($this->strTemplate);
+			$this->Template->title = $this->headline;
+		}
 	
-			$this->Template->id = 'progressbar_' . $this->id;
-			
-			$this->Template->btn_classes = '' . $this->splitArr($this->btn_styles);
 	
 	}
 	
-	public function splitArr($arr){
-	$str='';
-		if ($arr==''||!is_array(unserialize($arr))) {
-			return;
-		}
-		foreach (unserialize($arr) as $class) {
-			$str.=' '.$class;
-		}
-		return $str;
-	}
 }
