@@ -15,7 +15,7 @@ namespace MHAHNEFELD\FTC;
 
 class PrepareVars extends \Controller
 {
-	
+		//getContentElement
 	public function elements($objRow, $strBuffer)    {   
 		
 		// $objRow->type is the type of the Element e.g. 'row_start'
@@ -24,16 +24,39 @@ class PrepareVars extends \Controller
 		$strClass = $this->findContentElement($objRow->type); //get the registrated Classname
 		$objElement = new $strClass($objRow);
 		
-		$this->design_classes($objElement);
+		$this->design_elements($objElement);
 		$strBuffer = $objElement->generate();
 
 		return $strBuffer; 
 			
          
      } 
+     //compileFormFields
+     public function forms($arrFields, $formId)    {   
+
+    		foreach ($arrFields as $k => $field) {
+    		$this->design_fields($field);
+    		
+			}
+    		return $arrFields; 
+ 
+        } 
      
+       //loadFormField
+      public function ffl($objWidget, $formId)    {   
+          		
+          		// $objRow->type is the type of the Element e.g. 'row_start'
+          		echo '<pre>';
+          		var_dump($objWidget);
+          		echo '<br>';
+          		var_dump($this->arrData);
+
+         		return $objWidget; 
+          			
+                   
+           } 
      
-     public function design_classes($el){
+     public function design_elements($el){
      
      $ftc = array();
      
@@ -77,6 +100,48 @@ class PrepareVars extends \Controller
      //var_dump($el->class);
      return $el;
      }
+     
+     public function design_fields($el){
+     
+     $ftc = array();
+     
+     //FTC Classes 
+     $ftc['align_field'] = $this->splitArr($el->align_ftc);
+     $ftc['align_label'] = $this->splitArr($el->label_align_ftc);
+     $ftc['style_label'] = $this->splitArr($el->label_classes);
+     $ftc['classes_field'] = $el->small_ftc.' '.$el->large_ftc.' '.$el->float_ftc.' '.$ftc['align_field'].' columns';
+     $ftc['classes_fix'] = $el->label_small_ftc.' '.$el->label_large_ftc.' '.$el->label_float_ftc.' '.$ftc['align_label'].' columns';
+     
+     
+     $ftc['data_attr'] = $this->splitArr($el->data_attr_ftc);
+  
+     $el->class = $strClass;
+     $el->ftc_field_classes = $ftc['classes_field'];
+     $el->ftc_fix_classes = $ftc['classes_fix'];
+     $el->label_style = $ftc['style_label'];
+	
+	//var_dump($el->type);
+	switch($el->type) {
+		case 'range_slider':
+		$el->rs_id = 'range_value_'.$el->id;
+		$el->ftc_rs_classes = $ftc['align_field'] = $this->splitArr($el->rs_classes);
+		break;
+		case 'submit':
+		$ftc['button_classes'] = $this->splitArr($el->btn_styles).' '.$el->btn_size;
+		$el->btn_classes = $ftc['button_classes'] ;
+		break;
+		
+		
+		default:
+		}
+   
+     
+     unset($ftc);
+     //var_dump($el->class);
+     return $el;
+     }
+     
+     
      public function splitArr($arr){
      $str='';
      	if ($arr==''||!is_array(unserialize($arr))) {

@@ -275,8 +275,8 @@ array_insert($GLOBALS['FE_MOD'], 2, array
 
 
 $GLOBALS['TL_HOOKS']['getContentElement'][] = array('PrepareVars', 'elements');
-
-
+$GLOBALS['TL_HOOKS']['compileFormFields'][] = array('PrepareVars', 'forms');
+//$GLOBALS['TL_HOOKS']['loadFormField'][] = array('PrepareVars', 'ffl');
 
 // config.php   ###### Templateausgabe für ContentElements.php
 //https://contao.org/de/manual/3.0/customizing-contao.html#parsefrontendtemplate
