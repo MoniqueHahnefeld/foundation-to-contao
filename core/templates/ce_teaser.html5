@@ -1,4 +1,3 @@
-
 <div class="<?php echo $this->ftc_classes; ?> block"<?php echo $this->ftcID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?> <?php echo $this->data_attr;?>>
 
   <?php if ($this->headline): ?>

@@ -103,19 +103,6 @@ ClassLoader::addClasses(array
 	'MHAHNEFELD\FTC\ContentAlertBox'  =>	'system/modules/foundation-to-contao/elements/callouts_prompts/ContentAlertBox.php',
 	'MHAHNEFELD\FTC\ContentJoyride'  =>	'system/modules/foundation-to-contao/elements/callouts_prompts/ContentJoyride.php',
 	
-	//Forms
-	'MHAHNEFELD\FTC\FormSelectMenu' => 'system/modules/foundation-to-contao/forms/FormSelectMenu.php',
-	'MHAHNEFELD\FTC\FormCheckBox' => 'system/modules/foundation-to-contao/forms/FormCheckBox.php',
-	'MHAHNEFELD\FTC\FormExplanation' => 'system/modules/foundation-to-contao/forms/FormExplanation.php',
-	'MHAHNEFELD\FTC\FormFieldset' => 'system/modules/foundation-to-contao/forms/FormFieldset.php',
-	'MHAHNEFELD\FTC\FormHeadline' => 'system/modules/foundation-to-contao/forms/FormHeadline.php',
-	'MHAHNEFELD\FTC\FormPassword' => 'system/modules/foundation-to-contao/forms/FormPassword.php',
-	'MHAHNEFELD\FTC\FormRadioButton' => 'system/modules/foundation-to-contao/forms/FormRadioButton.php',
-	'MHAHNEFELD\FTC\FormSubmit' => 'system/modules/foundation-to-contao/forms/FormSubmit.php',
-	'MHAHNEFELD\FTC\FormTextArea' => 'system/modules/foundation-to-contao/forms/FormTextArea.php',
-	'MHAHNEFELD\FTC\FormTextField' => 'system/modules/foundation-to-contao/forms/FormTextField.php',
-	'MHAHNEFELD\FTC\FormCaptcha' => 'system/modules/foundation-to-contao/forms/FormCaptcha.php',
-	
 	//Form Elements FTC
 	'MHAHNEFELD\FTC\FormRowStart'  => 'system/modules/foundation-to-contao/forms/FormRowStart.php',
 	'MHAHNEFELD\FTC\FormRowStop'  => 'system/modules/foundation-to-contao/forms/FormRowStop.php',

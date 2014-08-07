@@ -7,14 +7,9 @@
 - Foundation 5 von Zurb
 - jQuery
 
-
 ##Documentation
 
 	http://www.foundation-to-contao.de
-	
-	
-##Introduction	
-	http://www.new.foundation-to-contao.de
 	
 ##Tutorials	
 
@@ -27,38 +22,33 @@
 	
 ##Infos
 
-Zusätzliche Informationen zu den Funktionen:
 
 
-### Working with Rem (german)
+
+###arbeit mir rem
 http://www.drweb.de/magazin/css-gerootet-flexible-schriftgroessen-mit-rem-38784/
 
-### PLaceholder Images
+###placeholder images
+http://lorempixel.com/800/800/cats/designs2/ f
 
-[Loremppixel](http://lorempixel.com/800/800/cats/designs2/)
-[Placehold.it](http://placehold.it/)
-
-### Compatiblity
+###Kompatibilität
 http://foundation.zurb.com/docs/compatibility.html
 
-### view for icons+names
-
-An Icon Font for intgegration in foundation
-
+###view for icons+names
 http://zurb.com/playground/foundation-icon-fonts-3
 
 
-### designs patterns foundation
+###designs patterns foundation
 http://patterntap.com/code
 http://patterntap.com/
 
-### stencil sets 
+###stencil sets 
 http://zurb.com/playground/foundation4-stencil-sets
 
 ### Mansonry Plugin 
 http://patterntap.com/code/stacking-columns-layout-masonry
 
-### settings fpr contao
+### settings for contao
 Artikel f
 Nachrichten
 Events
@@ -73,7 +63,7 @@ Keystrokes
 Labels
 
 
-### integrated functions of Foundation Framework
+### Included elements of foundation Framkwork
 
 
 All Foundation Components
@@ -125,15 +115,15 @@ JAVASCRIPT COMPONENTS:
 	Joyride f
 	Reveal f
  
-#### Meta
- 
+
+ #####meta
 	Abide
 	Tooltips f 
 	Interchange
 	Visibility
 
-#### Module 
-
+ 
+ #####module
 	JS Top Bar f
 	Magellan f
 	Off Canvas f
@@ -144,16 +134,13 @@ JAVASCRIPT COMPONENTS:
 	Breadcrumbs f
 	Sub Nav
  
- 
-### Settings
- 
+ ##Settings
 	settings mit scss generate f
  
-### use Tooltips
+ ##use Tooltips
  
-#### Setting tooltip
-```javascript
-    $('[title]').attr('data-tooltip','data-tooltip');
+ ####setting tooltip
+$('[title]').attr('data-tooltip','data-tooltip');
 	$(document).foundation({
   				tooltips: {
     selector : '[title]',
@@ -167,9 +154,8 @@ JAVASCRIPT COMPONENTS:
         + '">' + content + '<span class="nub"></span></span>';
    		 }}
   		});
-```
-### ORBIT
-```javascript
+ 
+ ###ORBIT
  $(document).foundation({
    orbit: {
        animation: 'slide', // Sets the type of animation used for transitioning between slides, can also be 'fade'
@@ -207,8 +193,7 @@ JAVASCRIPT COMPONENTS:
        after_slide_change: noop // Execute a function after the slide changes
    }
  });
-```
-```html
+ 
  settings an template senden
  <ul data-orbit
      data-options="animation:slide;
@@ -217,10 +202,8 @@ JAVASCRIPT COMPONENTS:
                    navigation_arrows:true;
                    bullets:false;">
  </ul>
- ```
-#### erweitern um thumbsnav
-
-```javascript
+ 
+ ####erweitern um thumbsnav
  <a data-orbit-link="headline-1" class="small button">
    Goto Slide 1
  </a>
@@ -230,10 +213,4 @@ JAVASCRIPT COMPONENTS:
  <a data-orbit-link="headline-3" class="small button">
    Goto Slide 3
  </a>
-```
-#### License
-
-This work is published under LGPLv3-License
-
-Further information can be found here: 
-[http://www.gnu.de/documents/lgpl.de.html](http://www.gnu.de/documents/lgpl.de.html)
+ 
