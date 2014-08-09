@@ -236,4 +236,6 @@ JAVASCRIPT COMPONENTS:
 This work is published under LGPLv3-License
 
 Further information can be found here: 
+
 [http://www.gnu.de/documents/lgpl.de.html](http://www.gnu.de/documents/lgpl.de.html)
+
