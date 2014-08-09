@@ -11,7 +11,8 @@
  */
 
 
-
+$GLOBALS['TL_DCA']['tl_module']['palettes']['mh_foundation_to_contao']    = '{title_legend},name,headline,type;
+{expert_legend:hide},cssID,space';
 $GLOBALS['TL_DCA']['tl_module']['palettes']['ftc_offcanvas']    = '{title_legend},name,type;{nav_legend},levelOffset,showLevel,hardLimit,showProtected,offcanvas_align,top_bar;{reference_legend:hide},defineRoot;{template_legend:hide},navigationTpl,customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 $GLOBALS['TL_DCA']['tl_module']['palettes']['ftc_offcanvas_custom']    = '{title_legend},name,type;{nav_legend},pages,showProtected,offcanvas_align,top_bar;{template_legend:hide},navigationTpl,customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 
@@ -22,6 +23,7 @@ $GLOBALS['TL_DCA']['tl_module']['palettes']['ftc_topbar_section']    = '{title_l
 $GLOBALS['TL_DCA']['tl_module']['palettes']['ftc_topbar_section_custom']  = '{title_legend},name,type;{nav_legend},pages,showProtected,offcanvas_align,top_bar;{template_legend:hide},navigationTpl,customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 
 $GLOBALS['TL_DCA']['tl_module']['palettes']['ftc_topbar_stop']    = '{title_legend},name,type;{template_legend:hide},customTpl;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
+//$GLOBALS['TL_DCA']['tl_module']['palettes']['erp_registration_process']    = '{title_legend},name,headline,type;{redirect_legend},mh_overview_jumpTo;{expert_legend:hide},cssID,space';
 
 
 //selector
@@ -32,6 +34,31 @@ $GLOBALS['TL_DCA']['tl_module']['subpalettes']['top_bar']='top_bar_left,top_bar_
 
 
 
+/**
+ * Add subpalettes to tl_module
+
+$GLOBALS['TL_DCA']['tl_module']['subpalettes']['iso_enableLimit']       = 'iso_perPage';
+$GLOBALS['TL_DCA']['tl_module']['subpalettes']['iso_emptyMessage']      = 'iso_noProducts';
+$GLOBALS['TL_DCA']['tl_module']['subpalettes']['iso_emptyFilter']       = 'iso_noFilter';
+ */
+
+/**
+ * Add fields to tl_module
+
+
+
+$GLOBALS['TL_DCA']['tl_module']['fields']['iso_filterTpl'] = array
+(
+    'label'                     => &$GLOBALS['TL_LANG']['tl_module']['iso_filterTpl'],
+    'exclude'                   => true,
+    'default'                   => 'iso_filter_default',
+    'inputType'                 => 'select',
+    'options_callback'          => array('Isotope\Backend\Module\Callback', 'getFilterTemplates'),
+    'eval'                      => array('mandatory'=>true, 'tl_class'=>'w50', 'chosen'=>true),
+    'sql'                       => "varchar(64) NOT NULL default ''",
+);
+
+*/
 
 
 $palettes = $GLOBALS['TL_DCA']['tl_module']['palettes'];
@@ -157,7 +184,7 @@ $GLOBALS['TL_DCA']['tl_module']['palettes']['default'] = $pallete_ftc;
 					'filter'                  => true,
 					'inputType'               => 'select',
 				//	'options_callback'        => array('tl_module', 'getSmallOpitons'),
-					'reference'               => &$GLOBALS['TL_LANG']['tl_module']['float_ftc_options'],
+					'reference'               => &$GLOBALS['TL_LANG']['tl_module']['options'],
 					'eval'                    => array('multiple'=>true,'helpwizard'=>false, 'chosen'=>false, 'submitOnChange'=>false, 'tl_class'=>'w50'),
 					'sql'                     => "varchar(255) NOT NULL default ''"
 				),
@@ -170,7 +197,8 @@ $GLOBALS['TL_DCA']['tl_module']['palettes']['default'] = $pallete_ftc;
 		   			 'sorting' 				  => true,
 		   			'filter'                  => true,
 		   			'inputType'               => 'select',
-		   			'reference'               => &$GLOBALS['TL_LANG']['tl_module']['align_ftc_options'],
+		   		//	'options_callback'        => array('tl_module', 'getSmallOpitons'),
+		   			'reference'               => &$GLOBALS['TL_LANG']['tl_module']['options'],
 		   			'eval'                    => array('helpwizard'=>false, 'chosen'=>false, 'submitOnChange'=>false, 'tl_class'=>'w50 m12'),
 		   			'sql'                     => "varchar(255) NOT NULL default ''"
 		   		)

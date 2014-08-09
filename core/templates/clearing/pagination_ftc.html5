@@ -1,6 +1,5 @@
-
 <!-- indexer::stop -->
-<div class="pagination pagination-centered ">
+<div class="pagination pagination-centered">
 
   <p><?php echo $this->total; ?></p>
 

@@ -26,11 +26,15 @@ ClassLoader::addNamespaces(array
  */
 ClassLoader::addClasses(array
 (
+	
+	//HOOKs
+	'MHAHNEFELD\FTC\PrepareVars' => 'system/modules/foundation-to-contao/classes/PrepareVars.php',
+	'MHAHNEFELD\FTC\PrepareWidgets' => 'system/modules/foundation-to-contao/classes/PrepareWidgets.php',
+	
 	// Models
 	'MHAHNEFELD\FTC\ftcSettingsModel' => 'system/modules/foundation-to-contao/models/ftcSettingsModel.php',
 
 	// Modules
-	
 	'MHAHNEFELD\FTC\Module'  => 'system/modules/foundation-to-contao/modules/Module.php',
 	'MHAHNEFELD\FTC\ModuleOffcanvasCustom'  => 'system/modules/foundation-to-contao/modules/ModuleOffcanvasCustom.php',
 	'MHAHNEFELD\FTC\ModuleOffcanvas'  => 'system/modules/foundation-to-contao/modules/ModuleOffcanvas.php',
@@ -44,9 +48,6 @@ ClassLoader::addClasses(array
 	//Classes
 	'MHAHNEFELD\FTC\Intro'  => 'system/modules/foundation-to-contao/classes/Intro.php',
 	'MHAHNEFELD\FTC\Themes'  => 'system/modules/foundation-to-contao/classes/Themes.php',
-	'MHAHNEFELD\FTC\ModuleFTC'  => 'system/modules/foundation-to-contao/classes/ModuleFTC.php',
-	'Contao\ContentElement'  => 'system/modules/foundation-to-contao/elements/ContentElement.php',
-	'MHAHNEFELD\FTC\Hybrid'  => 'system/modules/foundation-to-contao/classes/Hybrid.php',
 	
 	//Elements magellan
 	'MHAHNEFELD\FTC\ContentMagellanNav'  => 'system/modules/foundation-to-contao/elements/magellan/ContentMagellanNav.php',
@@ -88,8 +89,7 @@ ClassLoader::addClasses(array
 	'MHAHNEFELD\FTC\ContentOrbitStartInside'  => 'system/modules/foundation-to-contao/elements/orbit/ContentOrbitStartInside.php',
 	'MHAHNEFELD\FTC\ContentOrbitStopInside'  => 'system/modules/foundation-to-contao/elements/orbit/ContentOrbitStopInside.php',
 	'MHAHNEFELD\FTC\ContentClearing'  => 'system/modules/foundation-to-contao/elements/clearing/ContentClearing.php',
-	'MHAHNEFELD\FTC\extndController'  =>	'system/modules/foundation-to-contao/classes/extndController.php',
-	'MHAHNEFELD\FTC\PaginationFTC'  =>	'system/modules/foundation-to-contao/classes/PaginationFTC.php',
+
 	//Videos
 	'MHAHNEFELD\FTC\ContentFlexVideo'  =>	'system/modules/foundation-to-contao/elements/media/ContentFlexVideo.php',
 	//placeholder
@@ -99,19 +99,6 @@ ClassLoader::addClasses(array
 	'MHAHNEFELD\FTC\ContentRevealModalStop'  =>	'system/modules/foundation-to-contao/elements/callouts_prompts/ContentRevealModalStop.php',
 	'MHAHNEFELD\FTC\ContentAlertBox'  =>	'system/modules/foundation-to-contao/elements/callouts_prompts/ContentAlertBox.php',
 	'MHAHNEFELD\FTC\ContentJoyride'  =>	'system/modules/foundation-to-contao/elements/callouts_prompts/ContentJoyride.php',
-	
-	//Forms
-	'MHAHNEFELD\FTC\FormSelectMenu' => 'system/modules/foundation-to-contao/forms/FormSelectMenu.php',
-	'MHAHNEFELD\FTC\FormCheckBox' => 'system/modules/foundation-to-contao/forms/FormCheckBox.php',
-	'MHAHNEFELD\FTC\FormExplanation' => 'system/modules/foundation-to-contao/forms/FormExplanation.php',
-	'MHAHNEFELD\FTC\FormFieldset' => 'system/modules/foundation-to-contao/forms/FormFieldset.php',
-	'MHAHNEFELD\FTC\FormHeadline' => 'system/modules/foundation-to-contao/forms/FormHeadline.php',
-	'MHAHNEFELD\FTC\FormPassword' => 'system/modules/foundation-to-contao/forms/FormPassword.php',
-	'MHAHNEFELD\FTC\FormRadioButton' => 'system/modules/foundation-to-contao/forms/FormRadioButton.php',
-	'MHAHNEFELD\FTC\FormSubmit' => 'system/modules/foundation-to-contao/forms/FormSubmit.php',
-	'MHAHNEFELD\FTC\FormTextArea' => 'system/modules/foundation-to-contao/forms/FormTextArea.php',
-	'MHAHNEFELD\FTC\FormTextField' => 'system/modules/foundation-to-contao/forms/FormTextField.php',
-	'MHAHNEFELD\FTC\FormCaptcha' => 'system/modules/foundation-to-contao/forms/FormCaptcha.php',
 	
 	//Form Elements FTC
 	'MHAHNEFELD\FTC\FormRowStart'  => 'system/modules/foundation-to-contao/forms/FormRowStart.php',
@@ -204,19 +191,19 @@ TemplateLoader::addFiles(array
 	'ce_alert_box' => 'system/modules/foundation-to-contao/templates/callouts_prompts',
 	'ce_joyride' => 'system/modules/foundation-to-contao/templates/callouts_prompts',
 	//forms
-	'form_select' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_upload' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_checkbox' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_explanation' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_fieldset' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_headline' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_password' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_radio' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_submit' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_textarea' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_textfield' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_captcha' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_message' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_select_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_upload_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_checkbox_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_explanation_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_fieldset_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_headline_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_password_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_radio_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_submit_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_textarea_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_textfield_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_captcha_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_message_ftc' => 'system/modules/foundation-to-contao/templates/forms',
 
 	'form_row_start' => 'system/modules/foundation-to-contao/templates/forms',
 	'form_row_stop' => 'system/modules/foundation-to-contao/templates/forms',

@@ -1,4 +1,4 @@
-
+<!-- indexer::stop -->
 <ul class="<?php echo $this->level; ?> off-canvas-list">
   <?php foreach ($this->items as $item): ?>
     <?php if ($item['isActive']): ?>
@@ -8,3 +8,4 @@
     <?php endif; ?>
   <?php endforeach; ?>
 </ul>
+<!-- indexer::continue -->

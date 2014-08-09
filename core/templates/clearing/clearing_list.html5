@@ -1,5 +1,5 @@
 
-<ul class="clearing-thumbs  small-block-grid-<?php echo $this->perRow; ?> <?php echo $class; ?>"   data-clearing>
+<ul class="clearing-thumbs small-block-grid-<?php echo $this->perRow; ?> <?php echo $class; ?>"   data-clearing>
   <?php foreach ($this->body as $class=>$row): ?>
     <?php foreach ($row as $col): ?>
       <?php if ($col->addImage): ?>

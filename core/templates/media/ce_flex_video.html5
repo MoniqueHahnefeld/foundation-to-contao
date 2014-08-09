@@ -1,10 +1,8 @@
-<div class="<?php echo $this->class.' '.$this->ftc_classes; ?>"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?> <?php echo $this->data_attr;?>>
+<div class="<?php echo $this->ftc_classes; ?> block"<?php echo $this->ftcID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?> <?php echo $this->data_attr;?>>
 
   <?php if ($this->headline): ?>
     <<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
   <?php endif; ?>
-
-
 
 <!-- indexer::stop -->
 <?php if ($this->use_iframe): ?>
@@ -12,7 +10,6 @@
 <div class="flex-video widescreen vimeo">
   <iframe src="<?php echo $this->embed_path; ?>" <?php echo $this->size; ?> frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 </div>
-
 
 <?php else: 
 if (!is_array($this->embed_path)) {return;}

@@ -103,35 +103,11 @@ class FormRangeSlider extends \Widget
 		
 		
 		$this->type = 'hidden';
-		
-		//FTC Classes 
-		$ftc_align_field= $this->splitArr($this->align_ftc);
-		$ftc_align_label= $this->splitArr($this->label_align_ftc);
-		$ftc_style_label= $this->splitArr($this->label_classes);
-		///$ftc_data_attr = $this->splitArr($this->data_attr_ftc);
-		$ftc_classes_field = $this->small_ftc.' '.$this->large_ftc.' '.$this->float_ftc.' '.$ftc_align_field.' columns';
-		$ftc_classes_fix = $this->label_small_ftc.' '.$this->label_large_ftc.' '.$this->label_float_ftc.' '.$ftc_align_label.' columns';
-		
-		
-		$this->rs_id = 'range_value_'.$this->id;
-		$this->ftc_rs_classes = $ftc_align_field= $this->splitArr($this->rs_classes);
-		$this->class = $strClass;
-		$this->ftc_field_classes = $ftc_classes_field;
-		$this->ftc_fix_classes = $ftc_classes_fix;
-		$this->label_style = $ftc_style_label;
+	
 		return parent::parse($arrAttributes);
 	}
 
-	public function splitArr($arr){
-	$str='';
-		if ($arr==''||!is_array(unserialize($arr))) {
-			return;
-		}
-		foreach (unserialize($arr) as $class) {
-			$str.=' '.$class;
-		}
-		return $str;
-	}
+
 	/**
 	 * Generate the widget and return it as string
 	 *

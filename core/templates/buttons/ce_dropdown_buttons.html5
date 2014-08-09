@@ -6,9 +6,6 @@
 
 ?>
 
-
-
-
 <ul id="<?php echo $this->id; ?>" class="f-dropdown <?php echo $this->class; ?>" data-dropdown-content>
   <?php 
    if (!is_array($this->items)) {return;}

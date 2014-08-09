@@ -1,3 +1,4 @@
+<!-- indexer::stop -->
 <li class="has-form" >
 <form<?php if ($this->action): ?> action="<?php echo $this->action; ?>"<?php endif; ?> method="get" >
 <div class="row collapse">
@@ -15,3 +16,4 @@
 </form>
 
 </li>
+<!-- indexer::continue -->

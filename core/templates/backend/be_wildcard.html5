@@ -1,5 +1,3 @@
-
-
 <?php if ($this->wildcard): ?>
  <div class="<?php if ($this->class): echo $this->class; endif; ?> tl_gray">
 
