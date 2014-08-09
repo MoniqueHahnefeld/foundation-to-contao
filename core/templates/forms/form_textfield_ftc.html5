@@ -34,7 +34,7 @@ if ($this->mandatory&&!$fixStr){
 		echo $fixStr;
 		
 	}
-	echo '<div class="'.$this->ftc_field_classes.' '.$this->id.'" >';
+	echo '<div class="'.$this->ftc_field_classes.'" '.$this->ftcID.'" >';
 
 
 ?>

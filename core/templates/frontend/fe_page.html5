@@ -12,6 +12,7 @@
   <meta name="generator" content="Contao Open Source CMS">
   
   <?php 
+  if(!function_exists(splitArr)){
   function splitArr($arr){
   $str='';
   if ($arr==''||!is_array(unserialize($arr))) {
@@ -22,6 +23,7 @@
   }
   return $str;
   };
+  }
   //FTC
   $headerClasses=' '.$this->layout->rwh_small_ftc.' '.$this->layout->rwh_large_ftc.' '.$this->layout->rwh_float_ftc.' '.splitArr($this->layout->rwh_align_ftc).' columns';
   $footerClasses=' '.$this->layout->rwf_small_ftc.' '.$this->layout->rwf_large_ftc.' '.$this->layout->rwf_float_ftc.' '.splitArr($this->layout->rwf_align_ftc).' columns';

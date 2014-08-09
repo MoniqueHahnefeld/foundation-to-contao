@@ -276,16 +276,9 @@ array_insert($GLOBALS['FE_MOD'], 2, array
 
 $GLOBALS['TL_HOOKS']['getContentElement'][] = array('PrepareVars', 'elements');
 $GLOBALS['TL_HOOKS']['compileFormFields'][] = array('PrepareVars', 'forms');
-//$GLOBALS['TL_HOOKS']['loadFormField'][] = array('PrepareVars', 'ffl');
-
-// config.php   ###### Templateausgabe für ContentElements.php
-//https://contao.org/de/manual/3.0/customizing-contao.html#parsefrontendtemplate
-
-
-//$GLOBALS['TL_HOOKS']['parseFrontendTemplate'][] = array('MHAHNEFELD\FTC\parseFE', 'splitArr');
-//$GLOBALS['TL_HOOKS']['parseFrontendTemplate'][0] = array('MHAHNEFELD\FTC\parseFE', 'myParseFrontendTemplate');
-// 
-// MyClass.php
+//$GLOBALS['TL_HOOKS']['outputFrontendTemplate'][] = array('PrepareVars', 'modules');
+//$GLOBALS['TL_HOOKS']['getArticle'][] = array('PrepareVars', 'articles');
+$GLOBALS['TL_HOOKS']['loadFormField'][] = array('PrepareWidgets', 'ffl');
 
 
 
