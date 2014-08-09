@@ -34,8 +34,8 @@ $GLOBALS['TL_LANG']['tl_form_field']['class'][0] ="Classes will be set to the fi
 $GLOBALS['TL_LANG']['tl_form_field']['label_float_ftc'][0] ="Elementalignment";
 
 //cols 
- $GLOBALS['TL_LANG']['tl_form_field']['ftc_legend']='Field - Settings for the Grid with 12 Columns';
- $GLOBALS['TL_LANG']['tl_form_field']['fix_legend']='Pre-Or Postfix - Settings for the Grid with 12 Columns';
+ $GLOBALS['TL_LANG']['tl_form_field']['ftc_legend']='Field - Settings for the Grid with e.g. 12 Columns';
+ $GLOBALS['TL_LANG']['tl_form_field']['fix_legend']='Pre-Or Postfix - Settings for the Grid with e.g. 12 Columns';
  $GLOBALS['TL_LANG']['tl_form_field']['label_legend']='Style the Label or Legendtext';
  
 $GLOBALS['TL_LANG']['tl_form_field']['small_ftc_options']['small-1'] ="1";
@@ -95,9 +95,12 @@ $GLOBALS['TL_LANG']['tl_form_field']['label_large_ftc_options']['large-11'] ="11
 $GLOBALS['TL_LANG']['tl_form_field']['label_large_ftc_options']['large-12'] ="12";
  
 // FormElements FTC BE LIST
-$GLOBALS['TL_LANG']['FFL']['row_start'][0] ="New Row";
+$GLOBALS['TL_LANG']['FFL']['row_start'][0] ="Row Start";
 $GLOBALS['TL_LANG']['FFL']['row_stop'][0] ="Row End";
 $GLOBALS['TL_LANG']['FFL']['range_slider'][0] ="Range Slider";
-
+// help Widget
+$GLOBALS['TL_LANG']['FFL']['row_start'][1] ="Row Start adds a div element with the css-class 'row'.";
+$GLOBALS['TL_LANG']['FFL']['row_stop'][1] ="Row End closes the div element.";
+$GLOBALS['TL_LANG']['FFL']['range_slider'][1] ="The Range Slider displays ranges.";
 
 ?>
