@@ -27,30 +27,29 @@ $GLOBALS['TL_LANG']['FMD']['ftc_topbar_stop'][1]         = "Extended Topbar Sect
 
 //module
 //top bar
-$GLOBALS['TL_LANG']['tl_module']['topbar_legend'] ="Top Bar Settings";
+$GLOBALS['TL_LANG']['tl_module']['topbar_legend'] ="Top Bar Einstellungen";
 $GLOBALS['TL_LANG']['tl_module']['topbar_locate'][0] ="Locate";
 $GLOBALS['TL_LANG']['tl_module']['topbar_locate_options']['fixed'] ="Fixed";
 $GLOBALS['TL_LANG']['tl_module']['topbar_locate_options']['sticky'] ="Sticky";
 $GLOBALS['TL_LANG']['tl_module']['topbar_locate_options']['contain_to_grid'] ="Relative";
-$GLOBALS['TL_LANG']['tl_module']['topbar_options'][0] ="Options";
-$GLOBALS['TL_LANG']['tl_module']['topbar_options'][1] ="Look at the official docs of foundation.";
+$GLOBALS['TL_LANG']['tl_module']['topbar_options'][0] ="Optionen";
+$GLOBALS['TL_LANG']['tl_module']['topbar_options'][1] ="Bitte für mehr Informationen in der offfiziellen Dokumentation von foundation (Zurb) nachsehen.";
 
-$GLOBALS['TL_LANG']['tl_module']['offcanvas_align'][0] ="Align of this Nav Modul";
-$GLOBALS['TL_LANG']['tl_module']['top_bar'][0] ="Add Top Bar !!!";
-$GLOBALS['TL_LANG']['tl_module']['top_bar'][1] ="You have to activate this. If you use more Offcanvas Modules (e.g. right and left) select this settings only on one of these Modules.";
-$GLOBALS['TL_LANG']['tl_module']['top_bar_left'][0] ="Show navigation on the left";
-$GLOBALS['TL_LANG']['tl_module']['top_bar_right'][0] ="Show navigation on the right";
-
+$GLOBALS['TL_LANG']['tl_module']['offcanvas_align'][0] ="Ausrichtung dieses Navigationnsmodules";
+$GLOBALS['TL_LANG']['tl_module']['top_bar'][0] ="Top Bar Hinzufügen!!!";
+$GLOBALS['TL_LANG']['tl_module']['top_bar'][1] ="Unbedingt aktivieren, wenn Off-Canvas benutzt wird. Falls mehrere Navigationen verwendet werden, (z.B. Rechts und Links) nur in einem der Module aktivieren.";
+$GLOBALS['TL_LANG']['tl_module']['top_bar_left'][0] ="Zeige Navigation auf der linken Seite";
+$GLOBALS['TL_LANG']['tl_module']['top_bar_right'][0] ="Zeige Navigation auf der rechten Seite";
 
 //Content
-$GLOBALS['TL_LANG']['tl_module']['small_ftc'][0] ="Width of the Field - Small";
-$GLOBALS['TL_LANG']['tl_module']['small_ftc'][1] ="Cols on small displays";
-$GLOBALS['TL_LANG']['tl_module']['large_ftc'][0] ="Width of the Field - Large";
-$GLOBALS['TL_LANG']['tl_module']['large_ftc'][1] ="Cols on large displays";
-$GLOBALS['TL_LANG']['tl_module']['align_ftc'][0] ="Center alignment";
-$GLOBALS['TL_LANG']['tl_module']['float_ftc'][0] ="Elementalignment";
+$GLOBALS['TL_LANG']['tl_module']['small_ftc'][0] ="Breite des Bereiches - Small";
+$GLOBALS['TL_LANG']['tl_module']['small_ftc'][1] ="Bitte Spaltenanzahl für kleine Bildschirme angeben";
+$GLOBALS['TL_LANG']['tl_module']['large_ftc'][0] ="Breite des Bereiches - Large";
+$GLOBALS['TL_LANG']['tl_module']['large_ftc'][1] ="Bitte Spaltenanzahl für große Bildschirme angeben";
+$GLOBALS['TL_LANG']['tl_module']['align_ftc'][0] ="Ausrichtung des Elementes - Zentriert";
+$GLOBALS['TL_LANG']['tl_module']['float_ftc'][0] ="Ausrichtung des Elementes - Links, Rechts";
 //cols 
-$GLOBALS['TL_LANG']['tl_module']['ftc_legend']='Field - Settings for the Grid with 12 Columns';
+$GLOBALS['TL_LANG']['tl_module']['ftc_legend']='Bereich - Einstellungen für das Raster mit z.B. 12 Spalten';
  
 $GLOBALS['TL_LANG']['tl_module']['small_ftc_options']['small-1'] ="1";
 $GLOBALS['TL_LANG']['tl_module']['small_ftc_options']['small-2'] ="2";

@@ -81,7 +81,7 @@ class Themes extends \Backend
 			if (array_key_exists($key.'_vars', $SettingsArr[0])&&$value=='1') {
 
 				$content .= ''.html_entity_decode($SettingsArr[0][$key.'_vars'])."\r\n";
-				if ($key=='global') {continue;}	
+				if ($key=='global'||$key=='typografie') {continue;}	
 				if ($countComponents!==0) {
 				$config .= "\t".',';	
 				}else {

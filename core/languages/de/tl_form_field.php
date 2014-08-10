@@ -10,32 +10,33 @@
  * @copyright 2014 Monique Hahnefeld
  */
 
+
 //Content
-$GLOBALS['TL_LANG']['tl_form_field']['small_ftc'][0] ="Width of the Field - Small";
-$GLOBALS['TL_LANG']['tl_form_field']['small_ftc'][1] ="Cols on small displays";
-$GLOBALS['TL_LANG']['tl_form_field']['large_ftc'][0] ="Width of the Field - Large";
-$GLOBALS['TL_LANG']['tl_form_field']['large_ftc'][1] ="Cols on large displays";
-$GLOBALS['TL_LANG']['tl_form_field']['align_ftc'][0] ="Center alignment";
-$GLOBALS['TL_LANG']['tl_form_field']['float_ftc'][0] ="Elementalignment";
+$GLOBALS['TL_LANG']['tl_form_field']['small_ftc'][0] ="Breite des Feldes - Small";
+$GLOBALS['TL_LANG']['tl_form_field']['small_ftc'][1] ="Bitte Spaltenanzahl für kleine Bildschirme angeben";
+$GLOBALS['TL_LANG']['tl_form_field']['large_ftc'][0] ="Breite des Feldes - Large";
+$GLOBALS['TL_LANG']['tl_form_field']['large_ftc'][1] ="Bitte Spaltenanzahl für große Bildschirme angeben";
+$GLOBALS['TL_LANG']['tl_form_field']['align_ftc'][0] ="Ausrichtung des Elementes - Zentriert";
+$GLOBALS['TL_LANG']['tl_form_field']['float_ftc'][0] ="Ausrichtung des Elementes - Links, Rechts";
 
-$GLOBALS['TL_LANG']['tl_form_field']['label_classes'][0] ="Label Classes (Corner & Colors)";
-$GLOBALS['TL_LANG']['tl_form_field']['label_classes'][1] ="You can use multiple classes.";
-$GLOBALS['TL_LANG']['tl_form_field']['is_collapse'][0] ="Use collapse";
-$GLOBALS['TL_LANG']['tl_form_field']['is_collapse'][1] ="Use collapse if you want to use pre- or postfix for an field inside this row";
-$GLOBALS['TL_LANG']['tl_form_field']['post_pre_fix'][0] ="Use Prefix or Postfix";
-$GLOBALS['TL_LANG']['tl_form_field']['post_pre_fix'][1] ="Field have to be wrapped with a row witch is set collapse";
-$GLOBALS['TL_LANG']['tl_form_field']['label_role'][0] ="Select Prefix OR Postfix";
+$GLOBALS['TL_LANG']['tl_form_field']['label_classes'][0] ="Label CSS-Klassen (Ecken & Farben)";
+$GLOBALS['TL_LANG']['tl_form_field']['label_classes'][1] ="Mehrere CSS-Klassen können ausgewählt werden.";
+$GLOBALS['TL_LANG']['tl_form_field']['is_collapse'][0] ="Benutze collapse";
+$GLOBALS['TL_LANG']['tl_form_field']['is_collapse'][1] ="Bitte collapse aktivieren, wenn sich innerhalb der Reihe ein Feld mit Pre-oder Postfix befindet.";
+$GLOBALS['TL_LANG']['tl_form_field']['post_pre_fix'][0] ="Prefix oder Postfix verwenden";
+$GLOBALS['TL_LANG']['tl_form_field']['post_pre_fix'][1] ="Das Feld muss mit einer Reihe umschlossen werden, damit das Pre-oderPostfix korrekt dargestellt wird. 'Collapse' muss aktiviert sein im Reihen Anfang Element";
+$GLOBALS['TL_LANG']['tl_form_field']['label_role'][0] ="Prefix ODER Postfix";
 
-$GLOBALS['TL_LANG']['tl_form_field']['label_small_ftc'][0] ="Width of the Fix - Small";
-$GLOBALS['TL_LANG']['tl_form_field']['label_small_ftc'][1] ="Cols on small displays";
-$GLOBALS['TL_LANG']['tl_form_field']['label_large_ftc'][0] ="Width of the Fix - Large";
-$GLOBALS['TL_LANG']['tl_form_field']['label_large_ftc'][1] ="Cols on large displays";
-$GLOBALS['TL_LANG']['tl_form_field']['class'][0] ="Classes will be set to the fixelement. You cann set button or/and radius e.g.";
-$GLOBALS['TL_LANG']['tl_form_field']['label_float_ftc'][0] ="Elementalignment";
+$GLOBALS['TL_LANG']['tl_form_field']['label_small_ftc'][0] ="Breite Fix - Small";
+$GLOBALS['TL_LANG']['tl_form_field']['label_small_ftc'][1] ="Bitte Spaltenanzahl für kleine Bildschirme angeben";
+$GLOBALS['TL_LANG']['tl_form_field']['label_large_ftc'][0] ="Breite Fix - Large";
+$GLOBALS['TL_LANG']['tl_form_field']['label_large_ftc'][1] ="Bitte Spaltenanzahl für große Bildschirme angeben";
+$GLOBALS['TL_LANG']['tl_form_field']['class'][0] ="Zusätzliche CSS-Klassen z.B. button oder/und radius.";
+$GLOBALS['TL_LANG']['tl_form_field']['label_float_ftc'][0] ="Ausrichtung des Labels";
 
 //cols 
- $GLOBALS['TL_LANG']['tl_form_field']['ftc_legend']='Field - Settings for the Grid with 12 Columns';
- $GLOBALS['TL_LANG']['tl_form_field']['fix_legend']='Pre-Or Postfix - Settings for the Grid with 12 Columns';
+ $GLOBALS['TL_LANG']['tl_form_field']['ftc_legend']='Feld - Einstellungen für das Raster mit z.B. 12 Spalten';
+ $GLOBALS['TL_LANG']['tl_form_field']['fix_legend']='Pre-Or Postfix - Einstellungen für das Raster mit z.B. 12 Spalten';
  
 $GLOBALS['TL_LANG']['tl_form_field']['small_ftc_options']['small-1'] ="1";
 $GLOBALS['TL_LANG']['tl_form_field']['small_ftc_options']['small-2'] ="2";
@@ -93,9 +94,12 @@ $GLOBALS['TL_LANG']['tl_form_field']['label_large_ftc_options']['large-11'] ="11
 $GLOBALS['TL_LANG']['tl_form_field']['label_large_ftc_options']['large-12'] ="12";
  
 // FormElements FTC BE LIST
-$GLOBALS['TL_LANG']['FFL']['row_start'][0] ="New Row";
-$GLOBALS['TL_LANG']['FFL']['row_stop'][0] ="Row End";
-$GLOBALS['TL_LANG']['FFL']['slider'][0] ="Slider";
-
+$GLOBALS['TL_LANG']['FFL']['row_start'][0] ="Reihe Anfang";
+$GLOBALS['TL_LANG']['FFL']['row_stop'][0] ="Reihe Ende";
+$GLOBALS['TL_LANG']['FFL']['range_slider'][0] ="Wertebereich Slider";
+// help Widget
+$GLOBALS['TL_LANG']['FFL']['row_start'][1] ="Reihe Anfang erzeugt ein DIV-Element mit der CSS-Klasse 'row'.";
+$GLOBALS['TL_LANG']['FFL']['row_stop'][1] ="Reihe Ende schließt das DIV-Element.";
+$GLOBALS['TL_LANG']['FFL']['range_slider'][1] ="Im Wertebereich Slider können Wertebereiche dargestellt werden.";
 
 ?>

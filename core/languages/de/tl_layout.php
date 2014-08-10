@@ -42,9 +42,9 @@
  $GLOBALS['TL_LANG']['tl_layout']['clr_align_ftc'][0] ="Rechte Spalte | Zentriert ausrichten";
  $GLOBALS['TL_LANG']['tl_layout']['clr_float_ftc'][0] ="Rechte Spalte | Ausrichten des Elements";
  //components
- $GLOBALS['TL_LANG']['tl_layout']['ftc_js_legend']='Foundation Components';
+ $GLOBALS['TL_LANG']['tl_layout']['ftc_js_legend']='Foundation Komponenten';
  $GLOBALS['TL_LANG']['tl_layout']['addFoundation'][0]='Benutze Foundation';
- $GLOBALS['TL_LANG']['tl_layout']['addFoundation'][1]='Wähle JavaScript Komponenen, welche in diesem Layout gebracht werden.';
+ $GLOBALS['TL_LANG']['tl_layout']['addFoundation'][1]='Wähle JavaScript Komponenten, welche in diesem Layout gebracht werden.';
  $GLOBALS['TL_LANG']['tl_layout']['FoundationJS'][0]='Foundation JS';
  $GLOBALS['TL_LANG']['tl_layout']['FoundationJS'][0]='Foundation JS';
  $GLOBALS['TL_LANG']['tl_layout']['FoundationJS_options']['abide']='Abide Validation für Formulare';
@@ -63,7 +63,7 @@
  $GLOBALS['TL_LANG']['tl_layout']['FoundationJS_options']['offcanvas']='Offcanvas Navigation';
  $GLOBALS['TL_LANG']['tl_layout']['FoundationJS_options']['magellan']='Magellan Scroll Navigation';
  $GLOBALS['TL_LANG']['tl_layout']['FTC_JS'][0]='FTC JS';
- $GLOBALS['TL_LANG']['tl_layout']['FoundationSource'][0]='Foundation Source';
+ $GLOBALS['TL_LANG']['tl_layout']['FoundationSource'][0]='Foundation Quelle';
  $GLOBALS['TL_LANG']['tl_layout']['FoundationSource_options']['local']='Local';
  $GLOBALS['TL_LANG']['tl_layout']['FoundationSource_options']['cdn']='CDN';
  $GLOBALS['TL_LANG']['tl_layout']['FoundationSource_options']['fallback']='CDN mit localem Fallback';

@@ -29,6 +29,7 @@ ClassLoader::addClasses(array
 	
 	//HOOKs
 	'MHAHNEFELD\FTC\PrepareVars' => 'system/modules/foundation-to-contao/classes/PrepareVars.php',
+	'MHAHNEFELD\FTC\PrepareWidgets' => 'system/modules/foundation-to-contao/classes/PrepareWidgets.php',
 	
 	// Models
 	'MHAHNEFELD\FTC\ftcSettingsModel' => 'system/modules/foundation-to-contao/models/ftcSettingsModel.php',
@@ -47,9 +48,6 @@ ClassLoader::addClasses(array
 	//Classes
 	'MHAHNEFELD\FTC\Intro'  => 'system/modules/foundation-to-contao/classes/Intro.php',
 	'MHAHNEFELD\FTC\Themes'  => 'system/modules/foundation-to-contao/classes/Themes.php',
-	'MHAHNEFELD\FTC\ModuleFTC'  => 'system/modules/foundation-to-contao/classes/ModuleFTC.php',
-
-	'MHAHNEFELD\FTC\Hybrid'  => 'system/modules/foundation-to-contao/classes/Hybrid.php',
 	
 	//Elements magellan
 	'MHAHNEFELD\FTC\ContentMagellanNav'  => 'system/modules/foundation-to-contao/elements/magellan/ContentMagellanNav.php',
@@ -71,7 +69,7 @@ ClassLoader::addClasses(array
 	'MHAHNEFELD\FTC\ContentListFTC'  => 'system/modules/foundation-to-contao/elements/content/ContentListFTC.php',
 	'MHAHNEFELD\FTC\ContentDefList'  => 'system/modules/foundation-to-contao/elements/content/ContentDefList.php',
 	'MHAHNEFELD\FTC\ContentPriceTable'  => 'system/modules/foundation-to-contao/elements/content/ContentPriceTable.php',
-	'MHAHNEFELD\FTC\ContentHeadlineFTC'  => 'system/modules/foundation-to-contao/elements/content/ContentHeadlineFTC.php',
+	
 	'MHAHNEFELD\FTC\ContentBlockquote'  => 'system/modules/foundation-to-contao/elements/content/ContentBlockquote.php',
 	'MHAHNEFELD\FTC\ContentVCard'  => 'system/modules/foundation-to-contao/elements/content/ContentVCard.php',
 	'MHAHNEFELD\FTC\ContentProgressBar'  => 'system/modules/foundation-to-contao/elements/content/ContentProgressBar.php',
@@ -91,8 +89,7 @@ ClassLoader::addClasses(array
 	'MHAHNEFELD\FTC\ContentOrbitStartInside'  => 'system/modules/foundation-to-contao/elements/orbit/ContentOrbitStartInside.php',
 	'MHAHNEFELD\FTC\ContentOrbitStopInside'  => 'system/modules/foundation-to-contao/elements/orbit/ContentOrbitStopInside.php',
 	'MHAHNEFELD\FTC\ContentClearing'  => 'system/modules/foundation-to-contao/elements/clearing/ContentClearing.php',
-	'MHAHNEFELD\FTC\extndController'  =>	'system/modules/foundation-to-contao/classes/extndController.php',
-	'MHAHNEFELD\FTC\PaginationFTC'  =>	'system/modules/foundation-to-contao/classes/PaginationFTC.php',
+
 	//Videos
 	'MHAHNEFELD\FTC\ContentFlexVideo'  =>	'system/modules/foundation-to-contao/elements/media/ContentFlexVideo.php',
 	//placeholder
@@ -140,7 +137,7 @@ TemplateLoader::addFiles(array
 	'ce_magellan_nav'  => 'system/modules/foundation-to-contao/templates/magellan',
 	'ce_magellan_stop'  => 'system/modules/foundation-to-contao/templates/magellan',
 	
-	'ce_text' => 'system/modules/foundation-to-contao/templates/content',
+	'ce_text_ftc' => 'system/modules/foundation-to-contao/templates/content',
 	'mod_mh_foundation-to-contao' => 'system/modules/foundation-to-contao/templates',
 	//forms
 	'form' => 'system/modules/foundation-to-contao/templates/forms',
@@ -194,19 +191,19 @@ TemplateLoader::addFiles(array
 	'ce_alert_box' => 'system/modules/foundation-to-contao/templates/callouts_prompts',
 	'ce_joyride' => 'system/modules/foundation-to-contao/templates/callouts_prompts',
 	//forms
-	'form_select' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_upload' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_checkbox' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_explanation' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_fieldset' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_headline' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_password' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_radio' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_submit' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_textarea' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_textfield' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_captcha' => 'system/modules/foundation-to-contao/templates/forms',
-	'form_message' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_select_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_upload_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_checkbox_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_explanation_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_fieldset_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_headline_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_password_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_radio_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_submit_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_textarea_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_textfield_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_captcha_ftc' => 'system/modules/foundation-to-contao/templates/forms',
+	'form_message_ftc' => 'system/modules/foundation-to-contao/templates/forms',
 
 	'form_row_start' => 'system/modules/foundation-to-contao/templates/forms',
 	'form_row_stop' => 'system/modules/foundation-to-contao/templates/forms',
