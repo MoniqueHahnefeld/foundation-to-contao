@@ -69,7 +69,7 @@ ClassLoader::addClasses(array
 	'MHAHNEFELD\FTC\ContentListFTC'  => 'system/modules/foundation-to-contao/elements/content/ContentListFTC.php',
 	'MHAHNEFELD\FTC\ContentDefList'  => 'system/modules/foundation-to-contao/elements/content/ContentDefList.php',
 	'MHAHNEFELD\FTC\ContentPriceTable'  => 'system/modules/foundation-to-contao/elements/content/ContentPriceTable.php',
-	'MHAHNEFELD\FTC\ContentHeadlineFTC'  => 'system/modules/foundation-to-contao/elements/content/ContentHeadlineFTC.php',
+	
 	'MHAHNEFELD\FTC\ContentBlockquote'  => 'system/modules/foundation-to-contao/elements/content/ContentBlockquote.php',
 	'MHAHNEFELD\FTC\ContentVCard'  => 'system/modules/foundation-to-contao/elements/content/ContentVCard.php',
 	'MHAHNEFELD\FTC\ContentProgressBar'  => 'system/modules/foundation-to-contao/elements/content/ContentProgressBar.php',
@@ -137,7 +137,7 @@ TemplateLoader::addFiles(array
 	'ce_magellan_nav'  => 'system/modules/foundation-to-contao/templates/magellan',
 	'ce_magellan_stop'  => 'system/modules/foundation-to-contao/templates/magellan',
 	
-	'ce_text' => 'system/modules/foundation-to-contao/templates/content',
+	'ce_text_ftc' => 'system/modules/foundation-to-contao/templates/content',
 	'mod_mh_foundation-to-contao' => 'system/modules/foundation-to-contao/templates',
 	//forms
 	'form' => 'system/modules/foundation-to-contao/templates/forms',

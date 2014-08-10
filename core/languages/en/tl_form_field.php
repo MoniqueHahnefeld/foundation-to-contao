@@ -30,7 +30,7 @@ $GLOBALS['TL_LANG']['tl_form_field']['label_small_ftc'][0] ="Width of the Fix - 
 $GLOBALS['TL_LANG']['tl_form_field']['label_small_ftc'][1] ="Cols on small displays";
 $GLOBALS['TL_LANG']['tl_form_field']['label_large_ftc'][0] ="Width of the Fix - Large";
 $GLOBALS['TL_LANG']['tl_form_field']['label_large_ftc'][1] ="Cols on large displays";
-$GLOBALS['TL_LANG']['tl_form_field']['class'][0] ="Classes will be set to the fixelement. You cann set button or/and radius e.g.";
+$GLOBALS['TL_LANG']['tl_form_field']['class'][0] ="CSS-Classes will be set to the fixelement. You cann set button or/and radius e.g.";
 $GLOBALS['TL_LANG']['tl_form_field']['label_float_ftc'][0] ="Elementalignment";
 
 //cols 

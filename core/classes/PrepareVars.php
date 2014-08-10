@@ -15,8 +15,29 @@ namespace MHAHNEFELD\FTC;
 
 class PrepareVars extends \Controller
 {
+		
+		
+	//parseFrontendTemplate
+	public function templates($obj){   
+		
+		$template = $obj->getName();
+		
+      		switch($template) {
+      		
+      		case 'ce_headline':
+      		case 'ce_text':
+      		case 'ce_list':
+      		//echo'<pre>XXX';
+      		$obj->setName($template.'_ftc');
+			break;
+      		default:
+    		}  		
+					
+	     
+	 } 	
+		
 		//getContentElement
-	public function elements($objRow, $strBuffer)    {   
+	public function elements($objRow, $strBuffer, $objElement)    {   
 		
 		// $objRow->type is the type of the Element e.g. 'row_start'
 		//var_dump($GLOBALS['objPage']);
@@ -36,6 +57,9 @@ class PrepareVars extends \Controller
 			$strBuffer = $objEl->generate();
 			
 		}
+		
+				
+		
 		unset($objEl);
 		
 		return $strBuffer; 
@@ -52,6 +76,8 @@ class PrepareVars extends \Controller
     		return $arrFields; 
  
         } 
+     
+     
      
        //loadFormField
       protected function ffl($objWidget,$strForm, $arrForm)    {   

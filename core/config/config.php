@@ -74,6 +74,7 @@ array_insert($GLOBALS['TL_WRAPPERS']['stop'],0, array
 		'tab_ftc_stop',
 		'tab_ftc_stop_inside',
 		'row_end',
+		'row_stop',
 		'button_bar_stop_ftc',
 		'dropdown_buttons_content_stop',
 		'orbit_stop',
@@ -192,10 +193,10 @@ array_insert($GLOBALS['TL_CTE'] ,$CTEsize, array
 	'ftc_content' => array
 	(
 		
-		'headline_ftc'            => 'ContentHeadlineFTC',
+		'headline'            => 'ContentHeadline',
 		'blockquote'            => 'ContentBlockquote',
 		'vcard'            => 'ContentVCard',
-		'list_ftc'            => 'ContentListFTC',
+		'list'            => 'ContentList',
 		'def_list'            => 'ContentDefList',
 		'progress_bar'            => 'ContentProgressBar',
 		'price_table'        => 'ContentPriceTable',
@@ -273,7 +274,7 @@ array_insert($GLOBALS['FE_MOD'], 2, array
  unset($GLOBALS['TL_CTE']['slider']);
  unset($GLOBALS['TL_CTE']['files']);
 
-
+$GLOBALS['TL_HOOKS']['parseTemplate'][] = array('PrepareVars', 'templates');
 $GLOBALS['TL_HOOKS']['getContentElement'][] = array('PrepareVars', 'elements');
 $GLOBALS['TL_HOOKS']['compileFormFields'][] = array('PrepareVars', 'forms');
 //$GLOBALS['TL_HOOKS']['outputFrontendTemplate'][] = array('PrepareVars', 'modules');

@@ -16,8 +16,8 @@ $GLOBALS['TL_LANG']['tl_form_field']['small_ftc'][0] ="Breite des Feldes - Small
 $GLOBALS['TL_LANG']['tl_form_field']['small_ftc'][1] ="Bitte Spaltenanzahl für kleine Bildschirme angeben";
 $GLOBALS['TL_LANG']['tl_form_field']['large_ftc'][0] ="Breite des Feldes - Large";
 $GLOBALS['TL_LANG']['tl_form_field']['large_ftc'][1] ="Bitte Spaltenanzahl für große Bildschirme angeben";
-$GLOBALS['TL_LANG']['tl_form_field']['align_ftc'][0] ="Center alignment";
-$GLOBALS['TL_LANG']['tl_form_field']['float_ftc'][0] ="Elementalignment";
+$GLOBALS['TL_LANG']['tl_form_field']['align_ftc'][0] ="Ausrichtung des Elementes - Zentriert";
+$GLOBALS['TL_LANG']['tl_form_field']['float_ftc'][0] ="Ausrichtung des Elementes - Links, Rechts";
 
 $GLOBALS['TL_LANG']['tl_form_field']['label_classes'][0] ="Label CSS-Klassen (Ecken & Farben)";
 $GLOBALS['TL_LANG']['tl_form_field']['label_classes'][1] ="Mehrere CSS-Klassen können ausgewählt werden.";
