@@ -10,25 +10,31 @@
  * @copyright 2014 Monique Hahnefeld
  */
  
+$GLOBALS['TL_LANG']['MOD']['foundation-to-contao'][0]   = "FTC – Foundation To Contao";
 
 $GLOBALS['TL_LANG']['FMD']['tl_ftc']   = "FTC";
-$GLOBALS['TL_LANG']['FMD']['ftc_offcanvas_custom'][0]         = "Offcanvas Custom Nav";
-$GLOBALS['TL_LANG']['FMD']['ftc_offcanvas'][0]         = "Offcanvas Nav";
+$GLOBALS['TL_LANG']['FMD']['ftc_offcanvas_custom'][0]         = "Offcanvas Custom Navifgation";
+$GLOBALS['TL_LANG']['FMD']['ftc_offcanvas'][0]         = "Offcanvas Navigation";
+$GLOBALS['TL_LANG']['FMD']['ftc_topbar_start'][0]         = "Erweiterte Topbar Section Start";
+$GLOBALS['TL_LANG']['FMD']['ftc_topbar_stop'][0]         = "Erweiterte  Topbar Section Stop";
 $GLOBALS['TL_LANG']['FMD']['ftc_topbar_section'][0]         = "Topbar Section";
 $GLOBALS['TL_LANG']['FMD']['ftc_topbar_section_custom'][0]         = "Topbar Section Custom";
-$GLOBALS['TL_LANG']['FMD']['ftc_topbar_start'][0]         = "Extended Topbar Section Start";
-$GLOBALS['TL_LANG']['FMD']['ftc_topbar_stop'][0]         = "Extended Topbar Section Stop";
-$GLOBALS['TL_LANG']['FMD']['ftc_offcanvas_custom'][1]         = "Offcanvas Custom Nav";
-$GLOBALS['TL_LANG']['FMD']['ftc_offcanvas'][1]         = "Offcanvas Nav";
-$GLOBALS['TL_LANG']['FMD']['ftc_topbar_section'][1]         = "Topbar Section";
-$GLOBALS['TL_LANG']['FMD']['ftc_topbar_start'][1]         = "Extended Topbar Section Start";
-$GLOBALS['TL_LANG']['FMD']['ftc_topbar_stop'][1]         = "Extended Topbar Section Stop";
 
+//helpwizard
+$GLOBALS['TL_LANG']['FMD']['ftc_offcanvas_custom'][1]         = "Entspricht der Custom Navigation vom Contao-Core, nur das sie als Offcanvas ausgegeben wird. Es muss in mindestes einer Offcanvas, die im Seitenlayout eingebunden wird, die Top-Bar aktiviert werden.";
+$GLOBALS['TL_LANG']['FMD']['ftc_offcanvas'][1]         = "Entspricht der Navigation vom Contao-Core, nur das sie als Offcanvas ausgegeben wird. Es muss in mindestes einer Offcanvas, die im Seitenlayout eingebunden wird, die Top-Bar aktiviert werden.";
+$GLOBALS['TL_LANG']['FMD']['ftc_topbar_start'][1]         = "Die erweiterte Top-Bar besteht aus mehreren Modulen, Start, Section/s und Ende. Das ist der Start.";
+$GLOBALS['TL_LANG']['FMD']['ftc_topbar_stop'][1]         = "Erzeugt den Abschluss der erweiterten Top-Bar.";
+$GLOBALS['TL_LANG']['FMD']['ftc_topbar_section'][1]         = "Entspricht der Navigation vom Contao-Core, nur das diese in die Top-Bar als Dropdown intetriert werden kann.";
+$GLOBALS['TL_LANG']['FMD']['ftc_topbar_section_custom'][1]         = "Entspricht der Custom-Navigation vom Contao-Core, nur das diese in die Top-Bar als Dropdown intetriert werden kann.";
 
 //module
 //top bar
+
+$GLOBALS['TL_LANG']['tl_module']['dropdown_level'][0] ="Level";
+
 $GLOBALS['TL_LANG']['tl_module']['topbar_legend'] ="Top Bar Einstellungen";
-$GLOBALS['TL_LANG']['tl_module']['topbar_locate'][0] ="Locate";
+$GLOBALS['TL_LANG']['tl_module']['topbar_locate'][0] ="Position";
 $GLOBALS['TL_LANG']['tl_module']['topbar_locate_options']['fixed'] ="Fixed";
 $GLOBALS['TL_LANG']['tl_module']['topbar_locate_options']['sticky'] ="Sticky";
 $GLOBALS['TL_LANG']['tl_module']['topbar_locate_options']['contain_to_grid'] ="Relative";
