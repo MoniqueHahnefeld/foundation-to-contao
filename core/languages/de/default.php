@@ -26,7 +26,7 @@ $GLOBALS['TL_LANG']['MSC']['foundation_to_contao_more']='Mehr erfahren';
 $GLOBALS['TL_LANG']['MSC']['news_more']='&raquo; Mehr';
 
 
-$GLOBALS['TL_LANG']['MSC']['ftc_version'] = '1.0 Beta';
+$GLOBALS['TL_LANG']['MSC']['ftc_version'] = '1.0.0 RC1';
 $GLOBALS['TL_LANG']['MSC']['config_theme'] = 'FTC – Foundation To Contao (Version: %s)';
 
 $GLOBALS['TL_LANG']['MSC']['ftcIntroduction']['donate'] = 'Diese Erweiterung ist eine Arbeit von Monique Hahnefeld. <br>Eine kleine Spende ist natürlich immer willkommen.'; 
